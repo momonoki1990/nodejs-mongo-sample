@@ -1,0 +1,21 @@
+{
+  "name": "nodejs-mongo-sample",
+  "version": "1.0.0",
+  "description": "Node.js sample api with MongoDB, Apollo Server",
+  "main": "index.js",
+  "repository": "git@github-private:momonoki1990/nodejs-mongo-sample.git",
+  "author": "momonoki1990 <naoya-kuma3@hotmail.co.jp>",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn build:live",
+    "build": "tsc -p .",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^17.0.41",
+    "nodemon": "^2.0.16",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.3"
+  }
+}
