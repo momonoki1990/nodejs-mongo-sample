@@ -10,7 +10,8 @@ services:
     ports:
       - "4000:4000"
     volumes:
-      - ./src/:/app/src
+      - ./:/app
+    command: sh -c "yarn && yarn start"
   mongo:
     image: mongo:4.0
     restart: always
@@ -20,6 +21,6 @@ services:
     ports:
       - "27010:27017"
     volumes:
-      - ./db:/data/db
+      - ./mongodb:/data/db
       - ./configdb:/data/configdb
       - ./mongod.conf:/etc/mongod.conf.orig

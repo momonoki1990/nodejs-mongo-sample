@@ -1,5 +1,5 @@
+/mongodb
 /configdb
-/db
 node_modules
 dist
 yarn-error.log
